@@ -1,0 +1,15 @@
+<package>
+  <description brief="align">
+
+     align
+
+  </description>
+  <author>nlc20</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/align</url>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="nav_msgs"/>
+
+</package>
