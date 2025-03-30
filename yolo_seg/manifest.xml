@@ -1,0 +1,15 @@
+<package>
+  <description brief="yolo_seg">
+
+     yolo_seg
+
+  </description>
+  <author>nlc20</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/yolo_seg</url>
+  <depend package="std_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="rospy"/>
+
+</package>
