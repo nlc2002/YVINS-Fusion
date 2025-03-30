@@ -1,0 +1,13 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find vins)/../config/vins_yolo.rviz" />
+
+    <arg name="config_file" default="$(find vins)/../config/kitti_raw/kitti_10_03_mono_imu_config.yaml" />
+    <node name="YoloSegmentation" pkg="yolo_seg" type="yolo_seg_node.py" args=" $(arg config_file)" output="screen" />
+
+    <node name="vins_estimator" pkg="vins" type="vins_node" args="$(arg config_file) 0" output="screen"/>
+    
+    <node name="vins_estimator_seg" pkg="vins" type="vins_node" args="$(arg config_file) 1" output="screen"/>
+
+    <!-- <node name="aligner" pkg="align" type="kaist_align_node.py" output="screen" /> -->
+
+</launch>
