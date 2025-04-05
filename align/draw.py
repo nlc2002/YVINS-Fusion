@@ -324,7 +324,7 @@ def draw_zed2i(gt_file, vins_aligned_file, vins_seg_aligned_file):
     ax1.tick_params(axis='both', pad=0.1)
     ax2.tick_params(axis='both', pad=0.1)
     ax1.set_position([0.15, 0.4, 0.8, 0.6])
-    ax2.set_position([0.15, 0.1, 0.8, 0.2])
+    ax2.set_position([0.15, 0.1, 0.8, 0.25])
     ax1.set_aspect('equal', adjustable='datalim')
     draw_trajectory(gt, vins_aligned, vins_seg_aligned, ax1)
     draw_TranslationError(gt, vins_aligned, vins_seg_aligned, ax2)
@@ -342,5 +342,5 @@ if __name__ == "__main__":
     zed2i_gt_aligned_file = dir + '/zed2i_gt_aligned.csv'
     zed2i_vins_aligned_file = dir + '/zed2i_vins_aligned.csv'
     zed2i_vins_seg_aligned_file = dir + '/zed2i_vins_seg_aligned.csv'
-    draw(gt_file, vins_aligned_file, vins_seg_aligned_file)
-    # draw_zed2i(zed2i_gt_aligned_file, zed2i_vins_aligned_file, zed2i_vins_seg_aligned_file)
+    # draw(gt_file, vins_aligned_file, vins_seg_aligned_file)
+    draw_zed2i(zed2i_gt_aligned_file, zed2i_vins_aligned_file, zed2i_vins_seg_aligned_file)

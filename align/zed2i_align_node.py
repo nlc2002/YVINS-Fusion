@@ -14,8 +14,8 @@ lon0 = 0  # deg
 h0 = 0     # meters
 
 # global variables
-# gnss_local_offset = 18.0
-gnss_local_offset = 0
+gnss_local_offset = 18.0
+# gnss_local_offset = 0
 is_aligned = False
 vins_path = []
 vins_path_aligned = Path()
@@ -27,7 +27,7 @@ t = np.zeros(3)
 t_seg = np.zeros(3)
 yaw = 0
 yaw_seg = 0
-align_length = 500
+align_length = 600
 align_length_start = 200
 
 def lla2ENU(lat, lon, alt):
