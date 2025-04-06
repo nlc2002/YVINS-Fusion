@@ -27,11 +27,13 @@ source ~/catkin_ws/devel/setup.bash
 
 (if you fail in this step, try to find another computer with clean system or reinstall Ubuntu and ROS)
 
-### 3.1 Campus dataset
+### 3.1 Campus dataset 
+
+[download](https://cloud.tsinghua.edu.cn/f/c93294680f2544b0a094/?dl=1)
 
 ```bash
-    roslaunch vins vins_zed2i_mono.launch 
-    rosbag play campus.bag
+roslaunch vins vins_zed2i_mono.launch 
+rosbag play campus.bag
 ```
 
 ### 3.2 [KAIST](https://sites.google.com/view/complex-urban-dataset)
@@ -39,8 +41,8 @@ source ~/catkin_ws/devel/setup.bash
 */datas/global_pose.py* transfer the global pose.csv to rosbag. Then you can merge the global_pose.bag with needed bag files.
 
 ```bash
-    roslaunch vins vins_kaist39_mono.launch 
-    rosbag play kaist.bag
+roslaunch vins vins_kaist39_mono.launch 
+rosbag play kaist.bag
 ```
 
 ### 6.1 Configuration file
