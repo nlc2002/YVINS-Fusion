@@ -73,6 +73,8 @@ if __name__ == "__main__":
     last_image = None
     last_detections = None
     last_yolo_image = None
+    dir = os.path.dirname(os.path.realpath(__file__))
+    save_path = os.path.join(dir, "figures")
     for image in images:
         image = cv2.imread(os.path.join(path, image))
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -83,18 +85,15 @@ if __name__ == "__main__":
             # show last yolo image and current yolo image
             cv2.imshow("last_yolo_image", last_yolo_image)
             cv2.imshow("yolo_image", yolo_image)
+            cv2.imwrite(os.path.join(save_path, "last_yolo_image.png"), last_yolo_image)
+            cv2.imwrite(os.path.join(save_path, "yolo_image.png"), yolo_image)
             last_yolo_image_points = draw_points(last_yolo_image, p0_list, index_list)
             yolo_image_points = draw_points(cv2.cvtColor(image, cv2.COLOR_GRAY2BGR), p1_list, index_list)
             # show last yolo image and current yolo image with points
             cv2.imshow("last_yolo_image_points", last_yolo_image_points)
             cv2.imshow("yolo_image_points", yolo_image_points)
-            # # if press 's', save this four images
-            # save_path = "~/Ingvio/src/InGVIO/yolo_seg/figures"
-            # if cv2.waitKey(0) & 0xFF == ord('s'):
-            #     cv2.imwrite(os.path.join(save_path, "last_yolo_image.jpg"), last_yolo_image)
-            #     cv2.imwrite(os.path.join(save_path, "yolo_image.jpg"), yolo_image)
-            #     cv2.imwrite(os.path.join(save_path, "last_yolo_image_points.jpg"), last_yolo_image_points)
-            #     cv2.imwrite(os.path.join(save_path, "yolo_image_points.jpg"), yolo_image_points)
+            cv2.imwrite(os.path.join(save_path, "last_yolo_image_points.png"), last_yolo_image_points)
+            cv2.imwrite(os.path.join(save_path, "yolo_image_points.png"), yolo_image_points)
             cv2.waitKey(0)
             
         last_yolo_image, detections = image_detection2(image, network, class_names, class_colors, thresh)
