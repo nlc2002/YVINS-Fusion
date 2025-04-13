@@ -27,6 +27,8 @@ source ~/catkin_ws/devel/setup.bash
 
 (if you fail in this step, try to find another computer with clean system or reinstall Ubuntu and ROS)
 
+## 3. Run YVINS-Fusion
+
 ### 3.1 Campus dataset 
 
 [download](https://cloud.tsinghua.edu.cn/f/c93294680f2544b0a094/?dl=1)
@@ -45,16 +47,16 @@ roslaunch vins vins_kaist39_mono.launch
 rosbag play kaist.bag
 ```
 
-### 6.1 Configuration file
+### 3.3 Configuration file
 
 Write a config file for your device. You can take config files of KAIST as the example. 
 
-## 8. Acknowledgements
+## 4. Acknowledgements
 
 We use [ceres solver](http://ceres-solver.org/) for non-linear optimization and [DBoW2](https://github.com/dorian3d/DBoW2) for loop detection, a generic [camera model](https://github.com/hengli/camodocal) and [GeographicLib](https://geographiclib.sourceforge.io/).
 
 We use [Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/v.1.1.0) as Yolo detector.
 
-## 9. License
+## 5. License
 
 The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
