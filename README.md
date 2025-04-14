@@ -14,12 +14,12 @@ The key features of our pipeline include:
 
 <!-- ![Keyframe Yolo Detection](yolo_seg/figures/yolo_thread.png) -->
 
-    <img src="yolo_seg/figures/yolo_thread.png" alt="Keyframe Yolo Detection" width="500" >
+  <img src="yolo_seg/figures/yolo_thread.png" alt="Keyframe Yolo Detection" width="500" >
 
 - **Yolo Prediction Mechanism**(for non-keyframe):
 
 <!-- ![pipeline](yolo_seg/figures/yolo_prediction.png) -->
-    <img src="yolo_seg/figures/yolo_prediction.png" alt="Yolo Prediction Mechanism" width="800" >
+  <img src="yolo_seg/figures/yolo_prediction.png" alt="Yolo Prediction Mechanism" width="800" >
 
 ## 1. Prerequisites
 
