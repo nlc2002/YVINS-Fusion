@@ -79,7 +79,7 @@ rosbag play urban27-dongtan-gt.bag
 A video of the result is available here:
 <!-- [here](https://www.youtube.com/watch?v=Wm_2r3Ow2kA). -->
 
-[![](https://i.ytimg.com/vi/Wm_2r3Ow2kA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Wm_2r3Ow2kA "")
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1744628346/video_to_markdown/images/youtube--Wm_2r3Ow2kA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=Wm_2r3Ow2kA "")
 
 ### 3.3 Configuration file
 
