@@ -4,6 +4,10 @@
 
 Based on [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 
+### 🌍 Introduction
+
+We presents an optimized visual pipeline integrating YOLO-based dynamic object exclusion with computational efficiency enhancements. To overcome the GPU dependency of typical deep learning implementations, we implement a hybrid architecture combining sparse YOLO detection with KLT optical flow tracking, enabling real-time execution on CPU-only platforms. Our framework,implemented through VINS-Fusion modifications, demonstrates superior performance across both the KAIST urban dataset and self-collected campus sequences. Experimental results reveal substantially reduced trajectory drift compared to baseline methods, particularly in extended navigation through dynamic scenes.
+
 ### ⚡ Key Features
 
 We propose a fast YOLO-based visual pipeline for VINS-Fusion. The pipeline is designed to be lightweight and efficient, making it suitable for real-time applications on CPU-only devices. 
@@ -61,7 +65,7 @@ rosbag play campus.bag
 
 ### 3.2 [KAIST](https://sites.google.com/view/complex-urban-dataset)
 
-*/datas/global_pose.py* transfer the global pose.csv to rosbag. Then you can merge the global_pose.bag with needed bag files. Here we provide a sample bag file ([urban27-dongtan](https://cloud.tsinghua.edu.cn/d/b67c9db499e84efb96f6/)) with global pose embedded.  
+Script *./datas/kaist/global_pose.py* could transfer the global pose.csv to rosbag. Then you can merge the global_pose.bag with needed bag files. Here we provide a sample bag file ([urban27-dongtan](https://cloud.tsinghua.edu.cn/d/b67c9db499e84efb96f6/)) with global pose embedded. If you want to generate your own bag file, please refer to [kaist2bag](https://github.com/tsyxyz/kaist2bag).
 
 After downloading the dataset, run the following command to extract the bag file:
 
