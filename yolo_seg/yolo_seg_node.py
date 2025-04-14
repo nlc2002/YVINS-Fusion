@@ -172,8 +172,8 @@ def image_callback(msg):
         last_image = cv_image
         # darknet.print_detections(detections, True)
         
-    print("yolo/yolo_predict", len(yolo_time)/(len(yolo_time) + len(yolo_predict_time)), '/', len(yolo_predict_time)/(len(yolo_time) + len(yolo_predict_time)))
-    print("mean yolo time/mean yolo predict time", np.mean(yolo_time), '/', np.mean(yolo_predict_time))
+    # print("yolo/yolo_predict", len(yolo_time)/(len(yolo_time) + len(yolo_predict_time)), '/', len(yolo_predict_time)/(len(yolo_time) + len(yolo_predict_time)))
+    # print("mean yolo time/mean yolo predict time", np.mean(yolo_time), '/', np.mean(yolo_predict_time))
 
     yolo_mask = np.ones(cv_image.shape[:2], dtype=np.uint8) *255
     for detection in detections:
