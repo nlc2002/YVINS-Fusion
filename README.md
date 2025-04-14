@@ -57,6 +57,8 @@ roslaunch vins vins_kaist39_mono.launch
 rosbag play urban27-dongtan-gt.bag
 ```
 
+A video of the result is available [here](https://www.youtube.com/watch?v=Wm_2r3Ow2kA).
+
 ### 3.3 Configuration file
 
 Write a config file for your device. You can take config files of KAIST as the example. 
