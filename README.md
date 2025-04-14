@@ -2,6 +2,25 @@
 
 ## An Fast YOLO-based Visual Pipeline for [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 
+### ⚡ Key Features
+
+
+
+We propose a fast YOLO-based visual pipeline for VINS-Fusion. The pipeline is designed to be lightweight and efficient, making it suitable for real-time applications on CPU-only devices. 
+The key features of our pipeline include:
+
+- **Keyframe Yolo Detection**:
+<!-- set image size -->
+
+<!-- ![Keyframe Yolo Detection](yolo_seg/figures/yolo_thread.png) -->
+
+<img src="yolo_seg/figures/yolo_thread.png" alt="Keyframe Yolo Detection" width="500" >
+
+- **Yolo Prediction Mechanism**:
+
+<!-- ![pipeline](yolo_seg/figures/yolo_prediction.png) -->
+<img src="yolo_seg/figures/yolo_prediction.png" alt="Yolo Prediction Mechanism" width="800" >
+
 ## 1. Prerequisites
 
 ### 1.1 **Ubuntu** and **ROS**
