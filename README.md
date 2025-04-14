@@ -29,9 +29,11 @@ source ~/catkin_ws/devel/setup.bash
 
 ## 3. Run YVINS-Fusion
 
-### 3.1 Campus dataset 
+### 3.1 Campus dataset
 
 [download](https://cloud.tsinghua.edu.cn/f/c93294680f2544b0a094/?dl=1)
+
+Run the following command to play the bag file:
 
 ```bash
 roslaunch vins vins_zed2i_mono.launch 
@@ -40,11 +42,19 @@ rosbag play campus.bag
 
 ### 3.2 [KAIST](https://sites.google.com/view/complex-urban-dataset)
 
-*/datas/global_pose.py* transfer the global pose.csv to rosbag. Then you can merge the global_pose.bag with needed bag files.
+*/datas/global_pose.py* transfer the global pose.csv to rosbag. Then you can merge the global_pose.bag with needed bag files. Here we provide a sample bag file ([urban27-dongtan](https://cloud.tsinghua.edu.cn/d/b67c9db499e84efb96f6/)) with global pose embedded.  
+
+After downloading the dataset, run the following command to extract the bag file:
+
+```bash
+cat urban27-dongtan.tar.gz** | tar -xzv
+```
+
+Then you can run the following command to play the bag file:
 
 ```bash
 roslaunch vins vins_kaist39_mono.launch 
-rosbag play kaist.bag
+rosbag play urban27-dongtan-gt.bag
 ```
 
 ### 3.3 Configuration file
