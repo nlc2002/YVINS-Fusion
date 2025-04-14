@@ -76,7 +76,10 @@ roslaunch vins vins_kaist39_mono.launch
 rosbag play urban27-dongtan-gt.bag
 ```
 
-A video of the result is available [here](https://www.youtube.com/watch?v=Wm_2r3Ow2kA).
+A video of the result is available here:
+<!-- [here](https://www.youtube.com/watch?v=Wm_2r3Ow2kA). -->
+
+[![](https://i.ytimg.com/vi/Wm_2r3Ow2kA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Wm_2r3Ow2kA "")
 
 ### 3.3 Configuration file
 
